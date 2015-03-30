@@ -1,0 +1,24 @@
+<script>
+
+(function()
+{
+var answer = 505;
+
+var guess = prompt ('How many Gumballz in the Gumball machine?');
+guess = Number.parseInt(guess);
+while (true) {
+if (guess === answer){
+alert ('Correcto, you get a Gumball!');
+break;
+} else if (guess < answer) {
+  guess = Number.parseInt(prompt('Muerto, you get an Eyeball, guess again'));
+} else if (guess  > answer) {
+  guess = Number.parseInt(prompt('Muerto, you get an Eybeball, guess again'));
+}
+
+}
+
+})();
+
+
+</script>
