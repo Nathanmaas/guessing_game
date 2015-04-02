@@ -1,12 +1,10 @@
 <script>
   (function() {
-    //var answer = 505;
     var withinOneHundred = ('Getting closer, You\'re within 100! Keep guessing!');
     var guessAgain = ('Muerto, you get an Eybeball, guess again');
     var guess = prompt ('How many Gumballz in the Gumball machine?');
     var tooMany = ('That is too many tries, you dont get a gumball!');
     var correct = ('Correcto, you get a Gumball!');
-    //var numTries = 0;
     guess = Number.parseInt(guess);
 
       var Guesses = function(guess){
@@ -15,7 +13,6 @@
       }
       var nextguess = new Guesses();
       console.log (nextguess);
-
 
       while (true) {
         if (guess === nextguess.answer) {
@@ -38,8 +35,6 @@
         if (nextguess.numTries > 5) {
           alert(tooMany);
           break;
-
-
         }
       }
   })();
